@@ -9,3 +9,7 @@
   padding-bottom: 500px;
   background-color: white;
 }
+
+h3 {
+  display: none;
+}
