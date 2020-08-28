@@ -5,8 +5,8 @@ function Pizza(size, topping) {
 
 Pizza.prototype.calculatePrice = function () {
   let pizzaPrice = parseInt(this.size);
-  if (this.size === "1") {
-    pizzaPrice += 10;
+  if (this.size === "3") {
+    pizzaPrice === 10;
   }
   else if (this.size === "2") {
     pizzaPrice += 5;
@@ -14,11 +14,14 @@ Pizza.prototype.calculatePrice = function () {
   else {
     pizzaPrice += 3;
   }
+  if (this.topping === "4", "5", "6", "7") {
+    pizzaPrice += 2;
+  }
   return pizzaPrice;
 }
 
 $(document).ready(function () {
-  $("#form").submit(function (event) {
+  $("#menu").submit(function (event) {
     event.preventDefault();
 
     const pizzaSize = $("#pizza-size").val();
