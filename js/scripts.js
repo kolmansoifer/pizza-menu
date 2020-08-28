@@ -12,6 +12,23 @@ Pizza.prototype.calculatePrice = function () {
     pizzaPrice += 5;
   }
   else {
-    ticket
+    pizzaPrice += 10;
   }
+  return pizzaPrice;
 }
+
+$(document).ready(function () {
+  $("#form").submit(function (event) {
+    event.preventDefault();
+
+    const pizzaSize = $("#pizza-size").val();
+    const pizzaToppings = $("#pizza-toppings").val();
+
+    let myPizza = new Pizza(pizzaSize, pizzaToppings);
+    let price = myPizza.calculatePrice();
+
+    $("#result").text(price);
+    $("h3").show();
+  })
+})
+
