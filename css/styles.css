@@ -1,0 +1,11 @@
+.btn {
+  margin-top: 20px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 500px;
+  background-color: white;
+}
