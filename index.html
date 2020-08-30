@@ -12,26 +12,37 @@
 <body>
   <div class="container">
     <h2>Pizzeria Laszlo</h2>
-    <form id="menu">
+    <form id="form">
       <div class="form-group">
-        <label for="pizza-size">Select a Size:</label>
-        <select class="form-control" id="size">
-          <option value="1">Small</option>
-          <option value="2">Medium</option>
-          <option value="3">Large</option>
+        <label for="pizza-crust">Select type of crust:</label>
+        <select class="form-control" id="crust">
+          <option value="1">Thin</option>
+          <option value="2">New York</option>
+          <option value="3">Chicago</option>
         </select>
       </div>
-      <label for="pizza-toppings">Choose Your Toppings:</label>
-      <select class="form-control" id="toppings">
-        <option value="4">Pepperoni</option>
-        <option value="5">Sausage</option>
-        <option value="6">Mushrooms</option>
-        <option value="7">Peppers</option>
-      </select>
-      <button type="submit" class="btn">Add PIzza to Cart</button>
+      <div class="form-group">
+        <label for="pizza-topping">Choose toppings:</label>
+        <select class="form-control" id="topping">
+          <option value="4">Pepperoni</option>
+          <option value="5">Sausage</option>
+          <option value="6">Mushrooms</option>
+          <option value="7">Peppers</option>
+        </select>
+      </div>
+      <div>
+        <label for="pizza-size">Select pizza size (base price):</label>
+        <select class="form-control" id="size">
+          <option value="10">Small ($10)</option>
+          <option value="15">Medium ($15)</option>
+          <option value="20">Large ($20)</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Add Pizza to Cart</button>
     </form>
 
-    <h3>Your pizza will cost: $<span id="result"></h3>
+    <h3>Your pizza will cost: $<span id="result"></span></h3>
   </div>
 </body>
 
