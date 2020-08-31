@@ -25,3 +25,12 @@ h3 {
 #size {
   width:300px;
 }
+
+body {
+  background-color: rgb(209, 0, 0);
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
